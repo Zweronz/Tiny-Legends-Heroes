@@ -147,16 +147,17 @@ public class PuppetBasic : MonoBehaviour
 		{
 			return false;
 		}
-		string className = "PuppetModelBuilder";
+		System.Type className = typeof(PuppetModelBuilder);
 		if (profile_instance.PuppetType == D3DPuppetProfile.ProfileType.AVATAR)
 		{
-			className = "PuppetAvatarBuilder";
+			className = typeof(PuppetAvatarBuilder);
 		}
 		else if (profile_instance.PuppetType == D3DPuppetProfile.ProfileType.SPECIAL)
 		{
-			className = "PuppetSpecialBuilder";
+			className = typeof(PuppetSpecialBuilder);
 		}
-		model_builder = UnityEngineInternal.APIUpdaterRuntimeServices.AddComponent(base.gameObject, "Assets/Scripts/Assembly-CSharp/PuppetBasic.cs (159,19)", className) as PuppetModelBuilder;
+		model_builder = gameObject.AddComponent(className) as PuppetModelBuilder;
+		//model_builder = UnityEngineInternal.APIUpdaterRuntimeServices.AddComponent(base.gameObject, "Assets/Scripts/Assembly-CSharp/PuppetBasic.cs (159,19)", className) as PuppetModelBuilder;
 		model_builder.PuppetComponent = this;
 		return true;
 	}
@@ -169,16 +170,17 @@ public class PuppetBasic : MonoBehaviour
 		{
 			return false;
 		}
-		string className = "PuppetModelBuilder";
+		System.Type className = typeof(PuppetModelBuilder);
 		if (profile_instance.PuppetType == D3DPuppetProfile.ProfileType.AVATAR)
 		{
-			className = "PuppetAvatarBuilder";
+			className = typeof(PuppetAvatarBuilder);
 		}
 		else if (profile_instance.PuppetType == D3DPuppetProfile.ProfileType.SPECIAL)
 		{
-			className = "PuppetSpecialBuilder";
+			className = typeof(PuppetSpecialBuilder);
 		}
-		model_builder = UnityEngineInternal.APIUpdaterRuntimeServices.AddComponent(base.gameObject, "Assets/Scripts/Assembly-CSharp/PuppetBasic.cs (181,19)", className) as PuppetModelBuilder;
+		model_builder = gameObject.AddComponent(className) as PuppetModelBuilder;
+		//model_builder = UnityEngineInternal.APIUpdaterRuntimeServices.AddComponent(base.gameObject, "Assets/Scripts/Assembly-CSharp/PuppetBasic.cs (181,19)", className) as PuppetModelBuilder;
 		model_builder.PuppetComponent = this;
 		return true;
 	}
