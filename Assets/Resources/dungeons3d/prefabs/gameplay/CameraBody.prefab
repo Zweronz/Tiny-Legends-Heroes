@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1373506733832343}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1373506733832343
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4422121806866109}
+  - 114: {fileID: 114039766744040243}
+  - 114: {fileID: 114254817984556287}
+  m_Layer: 0
+  m_Name: CameraBody
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4422121806866109
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1373506733832343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 49.5, z: 49.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4405168295816181}
+  m_Father: {fileID: 0}
+--- !u!114 &114039766744040243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1373506733832343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fd2a937fc93a2cf6a3f6d763c8568f, type: 3}
+  m_Name:
+--- !u!114 &114254817984556287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1373506733832343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2355b2cdc4d56923f04775d7b2ad95bc, type: 3}
+  m_Name:
+  activing_puppet: {fileID: 0}
+  ui_arena: {fileID: 0}
+  playerList: []
+  playerTallyList: []
+  playerRecycleList: []
+  playerSummonedList: []
+  playerWinnerList: []
+  enemyList: []
+  enemyTallyList: []
+  enemyRecycleList: []
+  enemySummonedList: []
+  playerTeamData: []
+  playerGrave: []
+  enemyGrave: []
+  enemyBodyDestroyer: []
+  playerGraveObj: {fileID: 0}
+  enemyGraveObj: {fileID: 0}
+  kill_count: 0
+  kill_require: 0
+  player_rest: 0
+  BattleResult: 0
+  AureoleManager: []
+  camera_lookAt: {fileID: 0}
+  CameraTransform:
+  - {x: 0, y: 49.5, z: 49.4}
+  - {x: 0, y: 20.33, z: 51.56}
+  CameraLookAtTransform:
+  - {x: 0, y: 0, z: 0.6}
+  - {x: 0, y: 0.67, z: -1.36}
+  CameraFov:
+  - 11
+  - 12
+  WorldLimit: []
+  battle_exp_basic: 0
+  battle_gold_basic: 0
+  battle_gained_exp: 0
+  battle_gained_gold: 0
+--- !u!1 &1299400643338165
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4405168295816181}
+  - 20: {fileID: 20335755990589852}
+  - 92: {fileID: 92898170239767083}
+  - 124: {fileID: 124924739685311767}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4405168295816181
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299400643338165}
+  m_LocalRotation: {x: 0.0121248895, y: 0.8683306, z: -0.49578932, w: 0.006922833}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4422121806866109}
+--- !u!20 &20335755990589852
+Camera:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299400643338165}
+  m_Enabled: 1
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 100
+  field of view: 11
+  orthographic: 0
+  orthographic size: 100
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_HDR: 0
+--- !u!92 &92898170239767083
+GUILayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299400643338165}
+  m_Enabled: 1
+--- !u!124 &124924739685311767
+FlareLayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299400643338165}
+  m_Enabled: 1

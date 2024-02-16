@@ -1,0 +1,15 @@
+public enum D3DScenes
+{
+	NEW_GAME_STORY = -1,
+	SCENE_ENTRANCE = 0,
+	UI_MAIN_MENU = 1,
+	SCENE_ARENA = 2,
+	SCENE_DUNGEON = 3,
+	UI_STASH = 4,
+	UI_LOADING = 5,
+	UI_OPTIONS = 6,
+	UI_WORLDMAP = 7,
+	UI_LOOT = 8,
+	UI_TAVERN = 9,
+	UI_SHOP = 10
+}
