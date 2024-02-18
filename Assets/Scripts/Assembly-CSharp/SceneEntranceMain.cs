@@ -5,6 +5,7 @@ public class SceneEntranceMain : MonoBehaviour
 {
 	private void Start()
 	{
+		Application.targetFrameRate = 240;
 		string[] array = new string[5] { "com.trinitigame.tinylegendsheroes.499centsv121", "com.trinitigame.tinylegendsheroes.1999cents2", "com.trinitigame.tinylegendsheroes.4999cents2", "com.trinitigame.tinylegendsheroes.9999centsv135", "com.trinitigame.tinylegendsheroes.299centsv135new" };
 		D3DMain.Instance.AndroidPlatform = D3DMain.ANDROID_PLATFORM.GOOGLE_PLAY;
 		GameObject gameObject = new GameObject();
