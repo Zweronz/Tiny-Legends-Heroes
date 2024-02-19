@@ -9,22 +9,22 @@ public class SceneEntranceMain : MonoBehaviour
 		string[] array = new string[5] { "com.trinitigame.tinylegendsheroes.499centsv121", "com.trinitigame.tinylegendsheroes.1999cents2", "com.trinitigame.tinylegendsheroes.4999cents2", "com.trinitigame.tinylegendsheroes.9999centsv135", "com.trinitigame.tinylegendsheroes.299centsv135new" };
 		D3DMain.Instance.AndroidPlatform = D3DMain.ANDROID_PLATFORM.GOOGLE_PLAY;
 		GameObject gameObject = new GameObject();
-		if (D3DMain.Instance.AndroidPlatform == D3DMain.ANDROID_PLATFORM.AMAZON)
-		{
-			gameObject.AddComponent<AmazonIAPManager>();
-			ChartBoostAndroid.init("50f623e917ba47141000008d", "4175cb97fe0d34910cf6cb022df5b3c737958ae8");
-			AmazonIAP.initiateItemDataRequest(array);
-		}
-		else
-		{
-			gameObject.AddComponent<GoogleIABManager>();
-			ChartBoostAndroid.init("50ed32e316ba477c2b000000", "42b0c3d838e9e58e57b6edb2205f877407776af0");
-			ChartBoostAndroid.onStart();
-			GoogleIAB.init("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtlhFYlem3iKeacI1OYyxAYyCjLHN8Y7y5qKYYzifoxcuzzGBh/ZKdfKkNasrAi64AJ2qjmb416k49qg7sJYGVOLnaSz9W8kkyblpoc3YCk71M+CKQ0mXMWqf97i1icIngkZafpLZSwr+OFMWajspbnJ6N/0XEbNh00HoWYC2QpJUfsi9kg3zem7PUCAPMDop2ZNApiZU7gRfO4D9FxBO/DfHjVihBzLu3H5k9F+8Tpz/WZUL0etZbeib9+sddb7V2pRktte/o080OVwCoxf79S/isXEXUWUMc+D8ok4hcn+YuTkP4zWtAo6Xf8nTkiiUnEqsBwrav6ZiHDD8nU2a7wIDAQAB");
-			GoogleIAB.queryInventory(array);
-		}
-		ChartBoostAndroid.cacheInterstitial(null);
-		ChartBoostAndroid.showInterstitial(null);
+		//if (D3DMain.Instance.AndroidPlatform == D3DMain.ANDROID_PLATFORM.AMAZON)
+		//{
+		//	gameObject.AddComponent<AmazonIAPManager>();
+		//	ChartBoostAndroid.init("50f623e917ba47141000008d", "4175cb97fe0d34910cf6cb022df5b3c737958ae8");
+		//	AmazonIAP.initiateItemDataRequest(array);
+		//}
+		//else
+		//{
+		//	gameObject.AddComponent<GoogleIABManager>();
+		//	ChartBoostAndroid.init("50ed32e316ba477c2b000000", "42b0c3d838e9e58e57b6edb2205f877407776af0");
+		//	ChartBoostAndroid.onStart();
+		//	GoogleIAB.init("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtlhFYlem3iKeacI1OYyxAYyCjLHN8Y7y5qKYYzifoxcuzzGBh/ZKdfKkNasrAi64AJ2qjmb416k49qg7sJYGVOLnaSz9W8kkyblpoc3YCk71M+CKQ0mXMWqf97i1icIngkZafpLZSwr+OFMWajspbnJ6N/0XEbNh00HoWYC2QpJUfsi9kg3zem7PUCAPMDop2ZNApiZU7gRfO4D9FxBO/DfHjVihBzLu3H5k9F+8Tpz/WZUL0etZbeib9+sddb7V2pRktte/o080OVwCoxf79S/isXEXUWUMc+D8ok4hcn+YuTkP4zWtAo6Xf8nTkiiUnEqsBwrav6ZiHDD8nU2a7wIDAQAB");
+		//	GoogleIAB.queryInventory(array);
+		//}
+		//ChartBoostAndroid.cacheInterstitial(null);
+		//ChartBoostAndroid.showInterstitial(null);
 		GameScreen.width = 960;
 		GameScreen.height = 640;
 		Application.targetFrameRate = 60;

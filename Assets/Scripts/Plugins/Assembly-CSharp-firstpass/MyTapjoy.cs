@@ -26,20 +26,20 @@ public class MyTapjoy : MonoBehaviour
 
 	private void Start()
 	{
-		if (Application.platform == RuntimePlatform.Android)
-		{
-			AndroidJNI.AttachCurrentThread();
-		}
+		//if (Application.platform == RuntimePlatform.Android)
+		//{
+		//	AndroidJNI.AttachCurrentThread();
+		//}
 		TapjoyPlugin.EnableLogging(true);
 		TapjoyPlugin.SetCallbackHandler(base.gameObject.name);
-		if (Application.platform == RuntimePlatform.Android)
-		{
-			TapjoyPlugin.RequestTapjoyConnect(androidAppId, androidSecretKey);
-		}
-		else if (Application.platform == RuntimePlatform.IPhonePlayer)
-		{
-			TapjoyPlugin.RequestTapjoyConnect(iphoneAppId, iphoneSecretKey);
-		}
+		//if (Application.platform == RuntimePlatform.Android)
+		//{
+		//	TapjoyPlugin.RequestTapjoyConnect(androidAppId, androidSecretKey);
+		//}
+		//else if (Application.platform == RuntimePlatform.IPhonePlayer)
+		//{
+		//	TapjoyPlugin.RequestTapjoyConnect(iphoneAppId, iphoneSecretKey);
+		//}
 		TapjoyPlugin.GetTapPoints();
 	}
 

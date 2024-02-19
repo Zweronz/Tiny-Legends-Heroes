@@ -272,7 +272,7 @@ public class UIArena : UIHelper
 		}
 		else
 		{
-			ChartBoostAndroid.showInterstitial(null);
+			//ChartBoostAndroid.showInterstitial(null);
 		}
 		yield return new WaitForSeconds(0.5f);
 		m_UIManagerRef[0].gameObject.SetActiveRecursively(false);
@@ -886,7 +886,7 @@ public class UIArena : UIHelper
 			battle_ui_event = false;
 			Time.timeScale = 0.0001f;
 			scene_arena.FreeAllTouch();
-			ChartBoostAndroid.showInterstitial(null);
+			//ChartBoostAndroid.showInterstitial(null);
 		}
 	}
 

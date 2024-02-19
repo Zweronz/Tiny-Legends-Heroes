@@ -90,14 +90,15 @@ public class UIOptions : UIHelper
 		else if (GetControlId("OptionsReviewBtn") == control.Id && command == 0)
 		{
 			D3DAudioManager.Instance.PlayAudio(D3DAudioManager.Instance.GetCommonAudio(D3DAudioManager.CommonAudio.BUTTON_SQUARE), null, false, false);
-			if (D3DMain.Instance.AndroidPlatform == D3DMain.ANDROID_PLATFORM.AMAZON)
-			{
-				Application.OpenURL("amzn://apps/android?p=com.trinitigame.android.tinylegendsheroes");
-			}
-			else if (D3DMain.Instance.AndroidPlatform == D3DMain.ANDROID_PLATFORM.GOOGLE_PLAY)
-			{
-				Application.OpenURL("market://details?id=com.trinitigame.android.tinylegendsheroes");
-			}
+			Application.OpenURL("https://www.youtube.com/watch?v=gyNtZeN_gTQ&list=PLameREsjcp75af75spbRZoHwC0ICqSeJ3");
+			//if (D3DMain.Instance.AndroidPlatform == D3DMain.ANDROID_PLATFORM.AMAZON)
+			//{
+			//	Application.OpenURL("amzn://apps/android?p=com.trinitigame.android.tinylegendsheroes");
+			//}
+			//else if (D3DMain.Instance.AndroidPlatform == D3DMain.ANDROID_PLATFORM.GOOGLE_PLAY)
+			//{
+			//	Application.OpenURL("market://details?id=com.trinitigame.android.tinylegendsheroes");
+			//}
 		}
 		else if (GetControlId("OptionsCreditsBtn") == control.Id && command == 0)
 		{
